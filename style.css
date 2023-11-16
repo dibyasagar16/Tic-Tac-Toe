@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(background.jpg);
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Ubuntu Mono", monospace;
+  color: #fff;
+  background-color: #11213aaf;
+  height: 3.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.game-area {
+  width: 45%;
+  margin: 1.5rem auto;
+  height: auto;
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(25, 36, 57, 0.806);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+h2 {
+  font-family: "Ubuntu Mono", monospace;
+  color: yellow;
+  background-color: #80808060;
+  border-radius: 12px 12px 0 0;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+  border: 0.2rem solid white;
+  color: #fff;
+  font-size: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: rgba(255, 255, 255, 0.125);
+  color: yellow;
+}
+
+.bt-0 {
+  border-top: none;
+}
+
+.br-0 {
+  border-right: none;
+}
+
+.bb-0 {
+  border-bottom: none;
+}
+
+.bl-0 {
+  border-left: none;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.125);
+}
+
+.turn {
+  font-size: 2rem;
+  font-family: "Ubuntu Mono", monospace;
+  font-style: italic;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+}
+
+button {
+  outline: none;
+  border: 0.2rem solid #fff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: transparent;
+  width: 100%;
+}
+
+button:hover {
+  background-color: yellow;
+  color: #000;
+  border: 0.2rem solid #000;
+}
+
+
+@media screen and (max-width:1024px){
+  h1{
+    font-size: 2.5rem;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 12vw);
+    grid-template-rows: repeat(3, 12vw);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+  .game-area {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .game-container {
+    margin: 1rem auto;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: repeat(3, 15vw);
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  body{
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .game-area {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .game-container {
+    margin: 3rem auto;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 21vw);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .game-area {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .game-container {
+    margin: 3rem auto;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 23vw);
+    grid-template-rows: repeat(3, 28vw);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .game-area {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .game-container {
+    margin: 3rem auto;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 28vw);
+  }
+}
